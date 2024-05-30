@@ -1,7 +1,12 @@
 @charset "UTF-8";
 
+:root {
+    --verde: #49a09d;
+    --lilas: #5f2c82;
+}
+
 body {
-    background-image: linear-gradient(to top, --verde, --lilas);
+    background-image: linear-gradient(to top, var(--verde), var(--lilas));
 }
 
 section#login {
