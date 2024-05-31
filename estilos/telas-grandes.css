@@ -11,6 +11,7 @@ body {
 
 section#login {
     width: 950px;
+    height: 350px;
 }
 
 section#login > div#imagem {
@@ -25,9 +26,10 @@ section#login > div#formulario {
 }
 
 div#formulario > h1 {
-    font-size: 2.0em;
+    font-size: 2em;
 }
 
-div#formulario > h1 > p { 
-    font-size: 1.2em;
+div#formulario > p { 
+    font-size: 1em;
+    margin: 20px 0px;
 }
