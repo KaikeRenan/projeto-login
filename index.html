@@ -19,20 +19,20 @@
                 <h1>Login</h1>
                 <p>Seja bem-vindo(a) novamente. Faça login para acessar sua conta e poder fazer as configurações no seu ambiente.</p>
                 <form action="login.php" method="POST" autocomplete="on">
-                    <p>
-                        <label for="iemail"><span class="material-symbols-outlined">person</span></label>
-                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email">
-                    </p>
-                    <p>
-                        <label for="isenha"><span class="material-symbols-outlined">key</span></label>
-                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password">
-                    </p>
-                    <p>
-                        <input type="submit" value="Enviar">
-                    </p>
-                    <p>
-                        <input type="button" value="Esqueci a senha">
-                    </p>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="seu e-mail" autocomplete="email" required maxlength="30">
+                        <label for="iemail"></label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-symbols-outlined">key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8" maxlength="20">
+                        <label for="isenha"></label>
+                    </div>
+                    <input type="submit" value="Enviar">
+                    <a href="esqueci.html">
+                        Esqueci a senha<span class="material-symbols-outlined">mail</span>
+                    </a>
                 </form>
             </div>
         </section>
